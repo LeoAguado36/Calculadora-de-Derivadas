@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Derivadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Derivadas</h1>
+        <form id="derivative-form">
+            <label for="function">Ingresa tu función (ej. x^2, 3(x^3), etc.):</label>
+            <input type="text" id="function" required>
+            <div id="keyboard">
+                <button type="button" class="key">+</button>
+                <button type="button" class="key">-</button>
+                <button type="button" class="key">*</button>
+                <button type="button" class="key">/</button>
+                <button type="button" class="key">^</button>
+                <button type="button" class="key">(</button>
+                <button type="button" class="key">)</button>
+                <button type="button" class="key">x</button>
+                <button type="button" class="key">0</button>
+                <button type="button" class="key">1</button>
+                <button type="button" class="key">2</button>
+                <button type="button" class="key">3</button>
+                <button type="button" class="key">4</button>
+                <button type="button" class="key">5</button>
+                <button type="button" class="key">6</button>
+                <button type="button" class="key">7</button>
+                <button type="button" class="key">8</button>
+                <button type="button" class="key">9</button>
+            </div>
+            <button type="submit">Calcular Derivada</button>
+        </form>
+        <div id="result-container">
+            <h2>Resultado:</h2>
+            <p id="result"></p>
+            <h2>Procedimiento:</h2>
+            <pre id="procedure"></pre>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
