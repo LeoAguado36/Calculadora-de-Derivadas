@@ -7,7 +7,16 @@ document.getElementById('derivative-form').addEventListener('submit', function(e
 document.querySelectorAll('.key').forEach(function(button) {
     button.addEventListener('click', function() {
         const input = document.getElementById('function');
-        input.value += button.textContent;
+        const text = button.textContent;
+        if (button.id === 'delete') {
+            input.value = input.value.slice(0, -1);
+        } else if (button.id === 'clear') {
+            input.value = '';
+        } else if (text.includes('()')) {
+            input.value += text.replace('()', '(') + ')';
+        } else {
+            input.value += text;
+        }
     });
 });
 
