@@ -76,6 +76,15 @@ button:hover {
     transform: translateY(0);
 }
 
+.special-key {
+    flex: 1 1 calc(40% - 10px); /* Special keys are wider */
+    background-color: #ff0000;
+}
+
+.special-key:hover {
+    background-color: #cc0000;
+}
+
 #result-container {
     margin-top: 20px;
 }
@@ -87,4 +96,3 @@ pre {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
