@@ -1,24 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonardo Aguado">
+    <meta name="author" content="Axel Agabo">
     <title>Calculadora de Derivadas</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"></script>
 </head>
+
 <body>
     <div class="container">
         <h1>Calculadora de Derivadas</h1>
         <h5>by: Leonardo Aguado</h5>
         <form id="derivative-form">
             <label for="function">Ingresa tu función (ej. x^2, 3*x^3, sin(x), etc.):</label>
-            <input type="text" id="function" required>
+            <div id="function-container">
+                <input type="text" id="function" required>
+                <div id="function-latex"></div>
+            </div>
             <div id="keyboard">
                 <button type="button" class="key">+</button>
                 <button type="button" class="key">-</button>
                 <button type="button" class="key">*</button>
                 <button type="button" class="key">/</button>
                 <button type="button" class="key">^</button>
+                <button type="button" class="key">¹</button>
+                <button type="button" class="key">²</button>
+                <button type="button" class="key">³</button>
+                <button type="button" class="key">⁴</button>
+                <button type="button" class="key">⁵</button>
+                <button type="button" class="key">⁶</button>
+                <button type="button" class="key">⁷</button>
+                <button type="button" class="key">⁸</button>
+                <button type="button" class="key">⁹</button>
                 <button type="button" class="key">(</button>
                 <button type="button" class="key">)</button>
                 <button type="button" class="key">x</button>
@@ -61,4 +80,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
